@@ -1,4 +1,5 @@
 # cloudflare-go
+## SHE BASH EDITION
 
 [![GoDoc](https://img.shields.io/badge/godoc-reference-5673AF.svg?style=flat-square)](https://godoc.org/github.com/cloudflare/cloudflare-go)
 [![Build Status](https://img.shields.io/travis/cloudflare/cloudflare-go/master.svg?style=flat-square)](https://travis-ci.org/cloudflare/cloudflare-go)
@@ -63,12 +64,12 @@ import (
 	"log"
 	"os"
 
-	"github.com/cloudflare/cloudflare-go"
+	"github.com/shebashllc/cloudflare-go"
 )
 
 func main() {
 	// Construct a new API object
-	api, err := cloudflare.New(os.Getenv("CF_API_KEY"), os.Getenv("CF_API_EMAIL"))
+	api, err := cloudflare.New(os.Getenv("CF_API_KEY"), os.Getenv("CF_API_EMAIL")) // store env variables in env file
 	if err != nil {
 		log.Fatal(err)
 	}
